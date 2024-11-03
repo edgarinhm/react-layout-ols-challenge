@@ -1,0 +1,63 @@
+.proccess-monitor-container {
+  /* Example CSS for a simple monitor-table */
+  .monitor-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .monitor-scroll-table {
+    overflow-y: auto;
+    height: 60vh;
+    table {
+      width: 100%;
+    }
+  }
+
+  .monitor-table tr {
+    /* Tables / Main table */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 0px;
+    isolation: isolate;
+
+    height: 48px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .monitor-table th {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    width: 150px;
+    height: 56px;
+  }
+  .monitor-table td {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: 150px;
+    height: 56px;
+  }
+
+  .monitor-table thead {
+    background-color: #fefeed;
+    border-bottom: 1px solid #d3d4d5;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .monitor-table tbody {
+    overflow: hidden;
+  }
+}

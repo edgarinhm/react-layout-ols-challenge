@@ -4,7 +4,6 @@
   /* Auto layout */
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 43px 32px;
 
   .icons {
