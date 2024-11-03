@@ -2,6 +2,7 @@
   "name": "react-layout-challenge",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://github.com/edgarinhm/react-layout-ols-challenge",
   "type": "module",
   "scripts": {
     "dev": "vite",
