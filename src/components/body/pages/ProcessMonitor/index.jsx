@@ -25,11 +25,13 @@ const ProccessMonitor = () => {
   return (
     <div className="proccess-monitor-container">
       <div>
-        <span> {errorMessage}</span>
-      </div>
-      <div>
         <h3>Monitor de procesos</h3>
       </div>
+      {errorMessage && (
+        <div>
+          <span> {errorMessage}</span>
+        </div>
+      )}
       <div className="monitor-scroll-table">
         <table className="monitor-table">
           <thead>
