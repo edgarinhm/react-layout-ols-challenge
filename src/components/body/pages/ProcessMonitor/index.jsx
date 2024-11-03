@@ -16,7 +16,7 @@ const ProccessMonitor = () => {
         const data = await Promise.resolve(ProccessMonitorMockData);
         setProccessData(data);
       } catch (error) {
-        setErrorMessage(`upps!!, something has happened. ${error?.message}`);
+        setErrorMessage(`Oops, something went wrong!!. ${error?.message}`);
       }
     };
     loadProccessData();
