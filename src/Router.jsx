@@ -8,5 +8,5 @@ export const router = createBrowserRouter(
       element: <App />,
     },
   ],
-  { basename: "react-layout-ols-challenge" }
+  { basename: "/react-layout-ols-challenge" }
 );
