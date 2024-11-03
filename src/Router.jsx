@@ -7,6 +7,6 @@ export const router = createBrowserRouter(
       path: "*",
       element: <App />,
     },
-  ],
-  { basename: "/react-layout-ols-challenge" }
+  ]
+  //   { basename: "/react-layout-ols-challenge" }
 );
