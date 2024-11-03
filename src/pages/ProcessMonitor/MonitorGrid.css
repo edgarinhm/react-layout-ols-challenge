@@ -6,8 +6,7 @@
   }
 
   .monitor-scroll-table {
-    overflow-y: auto;
-    height: 60vh;
+    width: calc(100vw - 180px);
     table {
       width: 100%;
     }
@@ -59,5 +58,15 @@
 
   .monitor-table tbody {
     overflow: hidden;
+  }
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-height: 992px) {
+  .proccess-monitor-container {
+    .monitor-scroll-table {
+      overflow: auto;
+      height: 60vh;
+    }
   }
 }

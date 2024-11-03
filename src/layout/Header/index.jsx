@@ -70,19 +70,21 @@ const caretdown = (
 const Header = () => {
   return (
     <header className="headerTop">
-      <div className="brand">
-        <img src={LogoImage} alt="logo" />
-      </div>
-      <div className="actions">
-        <span>{settingsIcon}</span>
-        <span>{notificationIcon}</span>
-        <div className="avatar">
-          <span>{avatarIcon}</span>
-          <div className="username">
-            <span className="title">Pedro López</span>
-            <span className="description">[Rol] Administrador</span>
+      <div className="navbar">
+        <div className="brand">
+          <img src={LogoImage} alt="logo" />
+        </div>
+        <div className="actions">
+          <span>{settingsIcon}</span>
+          <span>{notificationIcon}</span>
+          <div className="avatar">
+            <span>{avatarIcon}</span>
+            <div className="username">
+              <span className="title">Pedro López</span>
+              <span className="description">[Rol] Administrador</span>
+            </div>
+            <span className="caretdown">{caretdown}</span>
           </div>
-          <span className="caretdown">{caretdown}</span>
         </div>
       </div>
     </header>
