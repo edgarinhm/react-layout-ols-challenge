@@ -13,6 +13,7 @@ const Layout = (props) => {
           top: "80px",
           left: "88px",
           height: "calc(100vh - 80px)",
+          width: "calc(100vw - 88px)",
         }}
       >
         {props.children}

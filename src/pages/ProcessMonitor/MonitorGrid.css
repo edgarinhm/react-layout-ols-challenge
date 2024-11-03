@@ -1,12 +1,13 @@
 .proccess-monitor-container {
   /* Example CSS for a simple monitor-table */
+
   .monitor-table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 0.875rem;
   }
 
   .monitor-scroll-table {
-    width: calc(100vw - 180px);
     table {
       width: 100%;
     }

@@ -18,14 +18,14 @@ const MonitorGridRow = (props) => {
 
   return (
     <tr>
-      <td>{data.identificador}</td>
+      <td style={{ width: "150px" }}>{data.identificador}</td>
       <td>{data.nombre}</td>
-      <td>{data.tipo}</td>
+      <td style={{ width: "92px" }}>{data.tipo}</td>
       <td>{data.usuario}</td>
       <td>{data.fechaDeInicio}</td>
       <td>{data.fechaFin}</td>
       <td>{data.estado}</td>
-      <td>
+      <td style={{ width: "70px" }}>
         <button className="icon-btn icons" onClick={() => setOpenModal(true)}>
           {DetailIcon}
         </button>

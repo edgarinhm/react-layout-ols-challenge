@@ -17,14 +17,14 @@ const ProccessMonitor = () => {
         <table className="monitor-table">
           <thead>
             <tr>
-              <th>Identificador</th>
+              <th style={{ width: "150px" }}>Identificador</th>
               <th>Nombre</th>
-              <th>Tipo</th>
+              <th style={{ width: "92px" }}>Tipo</th>
               <th>Usuario</th>
               <th>Fecha de Inicio</th>
               <th>Fecha fin</th>
               <th>Estado</th>
-              <th>Opciones</th>
+              <th style={{ width: "70px" }}>Opciones</th>
             </tr>
           </thead>
           <tbody>
