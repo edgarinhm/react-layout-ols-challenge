@@ -13,6 +13,28 @@ const DetailIcon = (
   </svg>
 );
 
+const EmailIcon = (
+  <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em">
+    <path
+      fill="#00591B"
+      d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6m-2 0l-8 5-8-5h16m0 12H4V8l8 5 8-5v10z"
+    />
+  </svg>
+);
+
+const DownloadIcon = (
+  <svg fill="none" viewBox="0 0 24 24" height="1em" width="1em">
+    <path
+      fill="#00591B"
+      d="M11 5a1 1 0 112 0v7.158l3.243-3.243 1.414 1.414L12 15.986 6.343 10.33l1.414-1.414L11 12.158V5z"
+    />
+    <path
+      fill="#00591B"
+      d="M4 14h2v4h12v-4h2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4z"
+    />
+  </svg>
+);
+
 const MonitorGridRow = (props) => {
   const { setOpenModal, data } = props;
 
@@ -20,14 +42,38 @@ const MonitorGridRow = (props) => {
     <tr>
       <td style={{ width: "150px" }}>{data.identificador}</td>
       <td>{data.nombre}</td>
-      <td style={{ width: "92px" }}>{data.tipo}</td>
+      <td style={{ width: "92px" }}>
+        <div
+          className={`badge ${data.tipo === "C" ? "communication" : "monitor"}`}
+        >
+          {data.tipo}
+        </div>
+      </td>
       <td>{data.usuario}</td>
       <td>{data.fechaDeInicio}</td>
       <td>{data.fechaFin}</td>
-      <td>{data.estado}</td>
+      <td>
+        <div
+          className={`${
+            data.estado.charAt(0).toLowerCase() === "f"
+              ? "completed-badge"
+              : "pending-badge"
+          }`}
+        >
+          {data.estado}
+        </div>
+      </td>
       <td style={{ width: "70px" }}>
         <button className="icon-btn icons" onClick={() => setOpenModal(true)}>
           {DetailIcon}
+        </button>
+
+        <button className="icon-btn icons" onClick={() => ""}>
+          {EmailIcon}
+        </button>
+
+        <button className="icon-btn icons" onClick={() => ""}>
+          {DownloadIcon}
         </button>
       </td>
     </tr>

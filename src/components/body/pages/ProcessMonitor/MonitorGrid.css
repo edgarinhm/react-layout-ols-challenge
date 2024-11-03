@@ -62,6 +62,143 @@
   }
 }
 
+.badge {
+  border-radius: 4px;
+  &.communication {
+    /* Descriptive badge */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 4px;
+
+    width: 24px;
+    height: 20px;
+
+    background: #cdd409;
+    border-radius: 100px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    /* Badge text */
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    text-align: right;
+
+    color: #00591b;
+  }
+  &.monitor {
+    /* Descriptive badge */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 4px;
+
+    width: 27px;
+    height: 20px;
+
+    background: #1b71b4;
+    border-radius: 100px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    /* Badge text */
+
+    /* Paragraph/12'/Regular */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+
+    color: #ffffff;
+  }
+}
+
+.completed-badge {
+  /* Descriptive badge */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  gap: 4px;
+
+  width: 81px;
+  height: 28px;
+
+  background: #00591b;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Badge text */
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+
+  color: #ffffff;
+}
+
+.pending-badge {
+  /* Descriptive badge */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  gap: 4px;
+
+  width: 103px;
+  height: 28px;
+
+  background: #ffcc00;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Badge text */
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-align: right;
+
+  color: #5c4900;
+}
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-height: 992px) {
   .proccess-monitor-container {
