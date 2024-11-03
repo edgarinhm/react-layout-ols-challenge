@@ -1,0 +1,9 @@
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+}

@@ -1,0 +1,156 @@
+.headerTop {
+  /* Navbar */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 24px 16px 12px;
+  gap: 24px;
+
+  position: absolute;
+  width: calc(100vw - 88px);
+  height: 76.93px;
+  left: 88px;
+  top: 0px;
+
+  border-bottom: 1px solid #d3d4d5;
+
+  .brand {
+    /* Brand */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 988px;
+    height: 44.93px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .actions {
+    /* Actions */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 304px;
+    height: 40px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .avatar {
+    /* Avatar */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 176px;
+    height: 40px;
+
+    border-radius: 0px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+
+    .username {
+      /* Username */
+
+      /* Auto layout */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+
+      height: 40px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+      .title {
+        /* Username */
+
+        width: 104px;
+        height: 24px;
+
+        /* Paragraph/14'/Semibold */
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+
+        color: #1a171b;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .description {
+        /* Subtitle */
+
+        width: 104px;
+        height: 16px;
+
+        /* Paragraph/12'/Medium */
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        color: #7a838a;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+    }
+    .caretdown {
+      /* CaretDown
+
+chevron, directional, pointer, pointing, arrowhead, triangle, arrows
+*/
+
+      width: 16px;
+      height: 16px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+    }
+  }
+}
