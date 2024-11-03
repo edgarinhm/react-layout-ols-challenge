@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Modal from "../../components/Modal";
 import "./ProccessMonitor.css";
-import { ProccessMonitorMockData } from "../../mocks/process-monitor-mock-data";
 import MonitorGridRow from "./MonitorGridRow";
 import "./MonitorGrid.css";
+import Modal from "../../../common/components/Modal";
+import { ProccessMonitorMockData } from "../../../common/mocks/process-monitor-mock-data";
 
 const ProccessMonitor = () => {
   const [openModal, setOpenModal] = useState(false);
