@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import ProccessMonitor from "./pages/ProcessMonitor";
+import App from "./App";
 
 export const router = createBrowserRouter(
   [
     {
       path: "*",
-      element: <ProccessMonitor />,
+      element: <App />,
     },
   ],
   { basename: "/react-layout-ols-challenge" }

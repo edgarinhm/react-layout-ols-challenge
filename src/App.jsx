@@ -1,12 +1,11 @@
-import { RouterProvider } from "react-router-dom";
 import "./App.css";
 import Layout from "./layout";
-import { router } from "./Router";
+import ProccessMonitor from "./pages/ProcessMonitor";
 
 function App() {
   return (
     <Layout>
-      <RouterProvider router={router} />
+      <ProccessMonitor />
     </Layout>
   );
 }
