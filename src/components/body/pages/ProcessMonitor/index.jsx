@@ -1,14 +1,30 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "./ProccessMonitor.css";
 import MonitorGridRow from "./MonitorGridRow";
 import "./MonitorGrid.css";
 import Modal from "../../../../common/components/Modal";
 import { ProccessMonitorMockData } from "../../../../common/mocks/process-monitor-mock-data";
+import PaginationControls from "../../../../common/components/PaginationControls";
 
 const ProccessMonitor = () => {
   const [openModal, setOpenModal] = useState(false);
   const [errorMessage, setErrorMessage] = useState();
   const [proccessData, setProccessData] = useState([]);
+
+  const [pageSize, setPageSize] = useState(10);
+
+  const totalPages = useMemo(
+    () => Math.ceil(proccessData.length / pageSize),
+    [proccessData.length, pageSize]
+  );
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const currentSlice = (currentPage - 1) * pageSize;
+
+  const pagedProccessData = proccessData.slice(
+    currentSlice,
+    currentSlice + pageSize
+  );
 
   useEffect(() => {
     const loadProccessData = async () => {
@@ -47,12 +63,21 @@ const ProccessMonitor = () => {
             </tr>
           </thead>
           <tbody>
-            {proccessData.map((row) => (
+            {pagedProccessData.map((row) => (
               <MonitorGridRow key={row.id} data={row} />
             ))}
           </tbody>
         </table>
       </div>
+      <PaginationControls
+        currentPage={currentPage}
+        totalRecords={proccessData.length}
+        totalPages={totalPages}
+        recordsPerPage={[10, 25, 50, 100]}
+        setPageNumber={setCurrentPage}
+        rowsPerPage={pageSize}
+        setRowsPerPage={setPageSize}
+      />
       <Modal open={openModal} onClose={() => setOpenModal(false)} />
     </div>
   );

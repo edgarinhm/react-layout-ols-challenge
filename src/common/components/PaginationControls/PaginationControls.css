@@ -1,0 +1,40 @@
+.pagination-control {
+  /* <TableFooter> */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px 0px;
+  gap: 26px;
+
+  height: 44px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 10;
+  align-self: stretch;
+  flex-grow: 0;
+
+  .rows-per-page-container {
+    select {
+      border: none;
+    }
+  }
+
+  .navigation {
+    /* Navigation */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+}
