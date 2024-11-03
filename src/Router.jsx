@@ -4,9 +4,9 @@ import App from "./App";
 export const router = createBrowserRouter(
   [
     {
-      path: "*",
+      path: "/*",
       element: <App />,
     },
-  ]
-  //   { basename: "/react-layout-ols-challenge" }
+  ],
+  { basename: "/react-layout-ols-challenge" }
 );
