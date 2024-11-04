@@ -1,42 +1,8 @@
 import PropTypes from "prop-types";
-
-const DetailIcon = (
-  <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
-    <path
-      fill="#00591B"
-      d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 011.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0114.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 011.172 8z"
-    />
-    <path
-      fill="#00591B"
-      d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4.5 8a3.5 3.5 0 117 0 3.5 3.5 0 01-7 0z"
-    />
-  </svg>
-);
-
-const EmailIcon = (
-  <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em">
-    <path
-      fill="#00591B"
-      d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6m-2 0l-8 5-8-5h16m0 12H4V8l8 5 8-5v10z"
-    />
-  </svg>
-);
-
-const DownloadIcon = (
-  <svg fill="none" viewBox="0 0 24 24" height="1em" width="1em">
-    <path
-      fill="#00591B"
-      d="M11 5a1 1 0 112 0v7.158l3.243-3.243 1.414 1.414L12 15.986 6.343 10.33l1.414-1.414L11 12.158V5z"
-    />
-    <path
-      fill="#00591B"
-      d="M4 14h2v4h12v-4h2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4z"
-    />
-  </svg>
-);
+import { DetailIcon, DownloadIcon, EmailIcon } from "../../../../common/Icons";
 
 const MonitorGridRow = (props) => {
-  const { setOpenModal, data } = props;
+  const { setOpenModal, data, setCurrentRow } = props;
 
   return (
     <tr>
@@ -64,15 +30,20 @@ const MonitorGridRow = (props) => {
         </div>
       </td>
       <td style={{ width: "70px" }}>
-        <button className="icon-btn icons" onClick={() => setOpenModal(true)}>
+        <button
+          className="icon-btn icons"
+          onClick={() => {
+            setCurrentRow(data);
+            setOpenModal(true);
+          }}
+        >
           {DetailIcon}
         </button>
-
-        <button className="icon-btn icons" onClick={() => ""}>
+        <button className="icon-btn icons" onClick={() => setCurrentRow(data)}>
           {EmailIcon}
         </button>
 
-        <button className="icon-btn icons" onClick={() => ""}>
+        <button className="icon-btn icons" onClick={() => setCurrentRow(data)}>
           {DownloadIcon}
         </button>
       </td>
@@ -83,6 +54,7 @@ const MonitorGridRow = (props) => {
 MonitorGridRow.propTypes = {
   setOpenModal: PropTypes.func,
   data: PropTypes.object,
+  setCurrentRow: PropTypes.func,
 };
 
 export default MonitorGridRow;

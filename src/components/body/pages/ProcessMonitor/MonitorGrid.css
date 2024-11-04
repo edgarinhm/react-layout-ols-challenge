@@ -199,6 +199,63 @@
   color: #5c4900;
 }
 
+.menu-action-container {
+  /* Modals / Info modal */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 32px;
+  gap: 10px;
+
+  /* Date picker/Card - shadow */
+  box-shadow: 0px 0px 8px 3px rgba(165, 171, 0, 0.1);
+
+  .menu-action-row {
+    justify-content: flex-start;
+
+    /* Checkbox / Primary */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    height: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    /* Limpiar ordenamiento */
+
+    height: 24px;
+
+    .label-icon {
+      /* Paragraph/12'/Regular */
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      /* or 133% */
+      display: flex;
+      align-items: center;
+
+      color: #1a171b;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+  }
+}
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-height: 992px) {
   .proccess-monitor-container {

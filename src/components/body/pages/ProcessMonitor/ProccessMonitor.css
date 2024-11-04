@@ -18,3 +18,104 @@
     flex-grow: 0;
   }
 }
+
+.modal-complete-procces {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 5px 10px;
+
+  .modal-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    width: 350px;
+    gap: 8px;
+    p {
+      /* Identificador */
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+
+      /* Negro 2 */
+      color: #5b5a5a;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    span {
+      /* 123456 */
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      /* identical to box height */
+      display: flex;
+      align-items: center;
+
+      gap: 8px;
+
+      /* black */
+      color: #333333;
+
+      /* Inside auto layout */
+      flex: none;
+      flex-grow: 0;
+    }
+
+    .modal-badge {
+      /* Badge text */
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+      display: flex;
+      align-items: center;
+      text-align: right;
+
+      color: #ffffff;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+      /* Descriptive badge */
+
+      /* Auto layout */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 2px 8px;
+      gap: 4px;
+
+      border-radius: 100px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+
+      &.modal-communication {
+        width: 55px;
+      }
+    }
+  }
+}

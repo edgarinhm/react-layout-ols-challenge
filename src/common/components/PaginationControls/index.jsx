@@ -12,7 +12,7 @@ const ArrowLeft = (
     <path
       d="M15.705 7.41L14.295 6L8.29498 12L14.295 18L15.705 16.59L11.125 12L15.705 7.41Z"
       fill="black"
-      fill-opacity="0.56"
+      fillOpacity="0.56"
     />
   </svg>
 );
@@ -28,7 +28,7 @@ const ArrowRight = (
     <path
       d="M9.70498 6L8.29498 7.41L12.875 12L8.29498 16.59L9.70498 18L15.705 12L9.70498 6Z"
       fill="black"
-      fill-opacity="0.56"
+      fillOpacity="0.56"
     />
   </svg>
 );
