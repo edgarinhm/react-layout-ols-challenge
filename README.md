@@ -1,6 +1,6 @@
 # React Layout Challenge + Vite
 
-![design](image-1.png)
+![alt text](image-2.png)
 
 This project was bootstrapped with [Vite](https://vitejs.dev/).
 
