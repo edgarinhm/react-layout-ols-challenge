@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { DetailIcon } from "../../../../common/icons";
-import Modal from "../../../../common/components/Modal";
+import { DetailIcon } from "../../../common/icons";
+import Modal from "../../../common/components/Modal";
 
 const ProccessDetailModal = (props) => {
   const { openModal, onClose, data } = props;

@@ -2,17 +2,17 @@ import { useEffect, useMemo, useState } from "react";
 import "./ProccessMonitor.css";
 import MonitorGridRow from "./MonitorGridRow";
 import "./MonitorGrid.css";
-import { ProccessMonitorMockData } from "../../../../common/mocks/process-monitor-mock-data";
-import PaginationControls from "../../../../common/components/PaginationControls";
-import Popover from "../../../../common/components/Popover";
+import MenuActionRow from "./MenuActionRow";
+import ProccessDetailModal from "./ProccessDetailModal";
+import { ProccessMonitorMockData } from "../../../common/mocks/process-monitor-mock-data";
+import PaginationControls from "../../../common/components/PaginationControls";
+import Popover from "../../../common/components/Popover";
 import {
   ArrowDownIcon,
   ArrowUpIcon,
   MoreActionIcon,
   SortIcon,
-} from "../../../../common/Icons";
-import MenuActionRow from "./MenuActionRow";
-import ProccessDetailModal from "./ProccessDetailModal";
+} from "../../../common/icons";
 
 const ProccessMonitor = () => {
   const [openModal, setOpenModal] = useState(false);

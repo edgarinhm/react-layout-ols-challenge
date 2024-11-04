@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { DetailIcon, DownloadIcon, EmailIcon } from "../../../../common/Icons";
+import { DetailIcon, DownloadIcon, EmailIcon } from "../../../common/icons";
 
 const MonitorGridRow = (props) => {
   const { setOpenModal, data, setCurrentRow } = props;

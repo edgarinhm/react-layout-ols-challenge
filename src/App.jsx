@@ -1,5 +1,5 @@
 import "./App.css";
-import ProccessMonitor from "./components/body/pages/ProcessMonitor";
+import ProccessMonitor from "./components/body/ProcessMonitor";
 import Layout from "./components/layout";
 
 function App() {
