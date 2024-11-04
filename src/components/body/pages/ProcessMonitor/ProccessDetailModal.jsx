@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { DetailIcon } from "../../../../common/_icons";
+import { DetailIcon } from "../../../../common/icons";
 import Modal from "../../../../common/components/Modal";
 
 const ProccessDetailModal = (props) => {
