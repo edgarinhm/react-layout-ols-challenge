@@ -3,7 +3,7 @@ import "./Modal.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
-import { CloseIcon } from "../../Icons";
+import { CloseIcon } from "../../_icons";
 
 const Modal = (props) => {
   const { open, onClose, title, children } = props;
